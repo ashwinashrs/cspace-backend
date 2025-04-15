@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: coursespace-backend
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: DB_URI
+        value: YOUR_MONGODB_ATLAS_URI
+      - key: JWT_SECRET
+        value: YOUR_SECRET_KEY
